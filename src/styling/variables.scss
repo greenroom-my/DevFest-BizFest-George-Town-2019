@@ -1,0 +1,24 @@
+// Color
+$red: #db4437;
+$blue: #4682FC;
+$yellow: #f6b816;
+$green: #31a651;
+
+$primary:       $blue;
+$secondary:     $green;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$input-btn-font-size:         14px;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+$btn-padding-y:   11px;
+$btn-padding-x:   17px;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           16px;
+//$btn-border-radius-lg:        $border-radius-lg !default;
+//$btn-border-radius-sm:        $border-radius-sm !default;
