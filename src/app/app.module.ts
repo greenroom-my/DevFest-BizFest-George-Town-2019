@@ -9,6 +9,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './_layout/footer/footer.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { SiteLayoutComponent } from './_layout/site-layout/site-layout.component';
+import { AttendingComponent } from './attending/attending.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SiteLayoutComponent } from './_layout/site-layout/site-layout.component
     HomepageComponent,
     FooterComponent,
     ScheduleComponent,
-    SiteLayoutComponent
+    SiteLayoutComponent,
+    AttendingComponent
   ],
   imports: [
     BrowserModule,
