@@ -1,11 +1,45 @@
 // Color
-$red: #db4437;
-$blue: #4682FC;
-$yellow: #f6b816;
-$green: #31a651;
+$gray-300:      #3C4043;
+$gray-600:      #6B7077;
+$gray-900: #212529 !default;
+
+$red:           #db4437;
+$light-red:     #F9D2CF;
+$blue:          #4682FC;
+$medium-blue:   #ADCAF9;
+$light-blue:    #E8F0FF;
+$yellow:        #f6b816;
+$light-yellow:  #FCE387;
+$green:         #31a651;
+$light-green:   #A8DAB4;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+                (
+                        "light-red":        $light-red,
+                        "light-blue":       $light-blue,
+                        "medium-blue":      $medium-blue,
+                        "light-yellow":     $light-yellow,
+                        "light-green":      $light-green,
+                ),
+                $colors
+);
 
 $primary:       $blue;
 $secondary:     $green;
+
+// Typography
+//
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+$font-weight-normal:          400 !default;
+$font-weight-semibold:        500;
+
+$h1-font-size:                $font-size-base * 3.75;
+$h2-font-size:                $font-size-base * 2.625;
+
+$headings-color:              $gray-900;
 
 // Buttons + Forms
 //

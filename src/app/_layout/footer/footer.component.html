@@ -1,0 +1,37 @@
+<footer class="bg-light">
+  <div class="container">
+    <div class="ft-nav">
+      <div class="ft-link">
+        <div class="d-block d-md-flex px-4 px-md-0">
+          <div [ngClass]="{'active': footerActive}" (click)="toggleFooter()" class="ft-link-block">
+            <div class="ft-link-header">
+              For Visitors
+            </div>
+            <ul class="list-unstyled ft-link-list">
+              <li><a routerLink="/schedule" routerLinkActive="active">Schedule</a></li>
+              <li><a routerLink="/speakers" routerLinkActive="active">Speakers</a></li>
+            </ul>
+          </div> <!-- .ft-link-block end -->
+          <div [ngClass]="{'active': footerActive}" (click)="toggleFooter()" class="ft-link-block">
+            <div class="ft-link-header">
+              Explore Past DevFests
+            </div>
+            <ul class="list-unstyled ft-link-list">
+              <li><a target="_blank" href="http://devfest2014.gdggeorgetown.com/">GDG DevFest GeorgeTown 2014</a></li>
+              <li><a target="_blank" href="http://devfest2015.gdggeorgetown.com/">GDG DevFest GeorgeTown 2015</a></li>
+              <li><a target="_blank" href="http://devfest2016.gdggeorgetown.com/">GDG DevFest GeorgeTown 2016</a></li>
+              <li><a target="_blank" href="http://devfest2017.gdggeorgetown.com/">GDG DevFest GeorgeTown 2017</a></li>
+            </ul>
+          </div> <!-- .ft-link-block end -->
+        </div>
+      </div> <!-- .ft-link end -->
+    </div> <!-- ft-nav end -->
+
+    <div class="ft-copyright">
+      <div class="d-flex align-items-end justify-content-between">
+        <div class="copyright">© 2018. GDG DevFest + BizFest is a community event that offer sessions & code labs across different Google Developer platforms, product APIs & open source technologies.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
