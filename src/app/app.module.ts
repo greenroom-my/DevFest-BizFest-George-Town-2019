@@ -14,6 +14,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SpeakersComponent} from './speakers/speakers.component';
 import {SpeakerDialogComponent} from './_dialog/speaker-dialog/speaker-dialog.component';
 import {MatDialogModule} from '@angular/material';
+import {environment} from '../environments/environment';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
 
 @NgModule({
     declarations: [
@@ -37,7 +40,9 @@ import {MatDialogModule} from '@angular/material';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        AngularFirestoreModule,
+        AngularFireModule.initializeApp(environment.firebase)
     ],
     providers: [],
     bootstrap: [AppComponent]

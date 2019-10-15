@@ -7,54 +7,54 @@
 <div class="page-content">
   <div class="container">
     <div class="speakers-list row">
-      <div class="speaker-card col-12 col-md-6 col-lg-3" (click)="showDialog(speaker)">
+      <div class="speaker-card col-12 col-md-6 col-lg-4" (click)="showDialog(item)" *ngFor="let item of items | async">
         <div class="speaker-image">
           <span></span>
           <figure>
-            <img src="https://via.placeholder.com/277x269.png" alt="">
+            <img src="/assets/images/speakers/{{item.photo_url}}.jpg" alt="">
           </figure>
         </div>
         <div class="speaker-details">
-          <div class="name">Dr. Poo Kuan Hoong</div>
-          <div class="info">ML, Google Developer Expert @ Kuala Lumpur</div>
+          <div class="name">{{item.name}}</div>
+          <div class="info">{{item.title}}</div>
         </div>
       </div>
-      <div class="speaker-card col-12 col-md-6 col-lg-3">
-        <div class="speaker-image">
-          <span></span>
-          <figure>
-            <img src="https://via.placeholder.com/277x269.png" alt="">
-          </figure>
-        </div>
-        <div class="speaker-details">
-          <div class="name">Dr. Poo Kuan Hoong</div>
-          <div class="info">ML, Google Developer Expert @ Kuala Lumpur</div>
-        </div>
-      </div>
-      <div class="speaker-card col-12 col-md-6 col-lg-3">
-        <div class="speaker-image">
-          <span></span>
-          <figure>
-            <img src="https://via.placeholder.com/277x269.png" alt="">
-          </figure>
-        </div>
-        <div class="speaker-details">
-          <div class="name">Dr. Poo Kuan Hoong</div>
-          <div class="info">ML, Google Developer Expert @ Kuala Lumpur</div>
-        </div>
-      </div>
-      <div class="speaker-card col-12 col-md-6 col-lg-3">
-        <div class="speaker-image">
-          <span></span>
-          <figure>
-            <img src="https://via.placeholder.com/277x269.png" alt="">
-          </figure>
-        </div>
-        <div class="speaker-details">
-          <div class="name">Dr. Poo Kuan Hoong</div>
-          <div class="info">ML, Google Developer Expert @ Kuala Lumpur</div>
-        </div>
-      </div>
+      <!--<div class="speaker-card col-12 col-md-6 col-lg-3">-->
+        <!--<div class="speaker-image">-->
+          <!--<span></span>-->
+          <!--<figure>-->
+            <!--<img src="https://via.placeholder.com/277x269.png" alt="">-->
+          <!--</figure>-->
+        <!--</div>-->
+        <!--<div class="speaker-details">-->
+          <!--<div class="name">Dr. Poo Kuan Hoong</div>-->
+          <!--<div class="info">ML, Google Developer Expert @ Kuala Lumpur</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="speaker-card col-12 col-md-6 col-lg-3">-->
+        <!--<div class="speaker-image">-->
+          <!--<span></span>-->
+          <!--<figure>-->
+            <!--<img src="https://via.placeholder.com/277x269.png" alt="">-->
+          <!--</figure>-->
+        <!--</div>-->
+        <!--<div class="speaker-details">-->
+          <!--<div class="name">Dr. Poo Kuan Hoong</div>-->
+          <!--<div class="info">ML, Google Developer Expert @ Kuala Lumpur</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="speaker-card col-12 col-md-6 col-lg-3">-->
+        <!--<div class="speaker-image">-->
+          <!--<span></span>-->
+          <!--<figure>-->
+            <!--<img src="https://via.placeholder.com/277x269.png" alt="">-->
+          <!--</figure>-->
+        <!--</div>-->
+        <!--<div class="speaker-details">-->
+          <!--<div class="name">Dr. Poo Kuan Hoong</div>-->
+          <!--<div class="info">ML, Google Developer Expert @ Kuala Lumpur</div>-->
+        <!--</div>-->
+      <!--</div>-->
 
     </div>
   </div>
