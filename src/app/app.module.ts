@@ -17,6 +17,7 @@ import {MatDialogModule} from '@angular/material';
 import {environment} from '../environments/environment';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import { PartnerComponent } from './partner/partner.component';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,8 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
         SiteLayoutComponent,
         AttendingComponent,
         SpeakersComponent,
-        SpeakerDialogComponent
+        SpeakerDialogComponent,
+        PartnerComponent
     ],
     exports: [
         MatDialogModule

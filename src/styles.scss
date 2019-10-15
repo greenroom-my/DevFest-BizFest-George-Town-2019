@@ -49,12 +49,14 @@ Homepage
 // Header
 //
 .homepage-header {
+  position: relative;
   width: 100%;
   height: 100vh;
+  min-height: 500px;
   padding: 100px 0;
-  min-height: 600px;
+  overflow: hidden;
 
-  background-image: url('/assets/images/bg-header-hd.svg');
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -104,6 +106,9 @@ Homepage
       margin-bottom: 10px;
     }
   }
+  @include media-breakpoint-only(md) {
+    min-height: 700px;
+  }
   @include media-breakpoint-up(md) {
     .description {
       max-width: 530px;
@@ -114,6 +119,9 @@ Homepage
       width: 30%;
       left: 35%;
     }
+  }
+  @include media-breakpoint-up(lg) {
+    background-image: url('/assets/images/bg-header-hd.svg');
   }
 }
 
@@ -186,6 +194,115 @@ Homepage
     transform: translateY(0%);
   }
 }
+
+.header-bg--mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  display: block;
+  img {
+    position: absolute;
+    &.hero-image-- {
+      &blue- {
+        &circle {
+          left: 80%;
+          top: 12%;
+        }
+        &cross {
+          left: 60%;
+          top: 13%;
+          width: 6%;
+        }
+        &bridge {
+          left: 60%;
+          top: 13%;
+          width: 6%;
+        }
+        &diamond {
+          left: 96%;
+          bottom: 30%;
+          max-width: 38px;
+        }
+      } // blue
+      &green- {
+        &diagonal-squares {
+          left: 10%;
+          top: 17.5%;
+          width: 7.5%;
+          max-width: 48px;
+        }
+        &pointer {
+          left: 65%;
+          bottom: 12%;
+          width: 13%;
+          max-width: 86px;
+        }
+        &square {
+          left: 35%;
+          bottom: 10%;
+          width: 7.2%;
+          max-width: 46px;
+        }
+      } // green
+      &top-light-blue-circle {
+        left: 2%;
+        top: 17%;
+        width: 10px;
+      }
+      &bottom-light-blue-circle {
+        left: 22%;
+        bottom: 8%;
+        width: 10px;
+      }
+      &red- {
+        &chatbox {
+          left: 5%;
+          bottom: 15%;
+          width: 9.4%;
+        }
+        &square {
+          left: 20%;
+          bottom: 14%;
+          width: 3.4%;
+        }
+        &diamond {
+          left: 48%;
+          bottom: 19%;
+          width: 12px;
+        }
+      } //red
+      &yellow- {
+        &play-button-mobile {
+          left: 25%;
+          top: 11%;
+          width: 9.6%;
+          max-width: 61px;
+        }
+        &sphere {
+          left: 80%;
+          top: 13%;
+          width: 9%;
+          max-width: 90px;
+        }
+        &vertical-rectangle {
+          left: 90%;
+          bottom: 10%;
+          width: 6.7%;
+          max-width: 42px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
 // Speaker Section
 //
 .homepage-speakers {
