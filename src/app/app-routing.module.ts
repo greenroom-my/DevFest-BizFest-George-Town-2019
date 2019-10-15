@@ -5,6 +5,7 @@ import {HomepageComponent} from './homepage/homepage.component';
 import {SiteLayoutComponent} from './_layout/site-layout/site-layout.component';
 import {ScheduleComponent} from './schedule/schedule.component';
 import {AttendingComponent} from './attending/attending.component';
+import {SpeakersComponent} from './speakers/speakers.component';
 
 const routes: Routes = [
     {
@@ -24,6 +25,10 @@ const routes: Routes = [
             {
                 path      : 'schedule',
                 component : ScheduleComponent
+            },
+            {
+                path      : 'speakers',
+                component : SpeakersComponent
             },
             {
                 path      : 'attending',
