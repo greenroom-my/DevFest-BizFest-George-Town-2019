@@ -11,6 +11,14 @@
         <span>
           {{data.title}}
         </span>
+        <br>
+        <div class="tag-skill" *ngIf="data.skill != null">
+          {{data.skill}}
+        </div>
+        <br>
+        <span class="small color-gray" *ngIf="data.expert != null">
+          {{data.expert}}
+        </span>
       </div>
     </div>
   </div>

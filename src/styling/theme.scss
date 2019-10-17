@@ -61,6 +61,13 @@ Navi
 }
 
 // Logo
+.no-logo {
+  #navi .logo-container {
+    img {
+      opacity: 0;
+    }
+  }
+}
 #navi .logo-container {
   position: relative;
   z-index: 99;

@@ -7,4 +7,5 @@ export interface Speaker {
     background: string;
     from: string;
     photo_url: string;
+    expert: string;
 }
