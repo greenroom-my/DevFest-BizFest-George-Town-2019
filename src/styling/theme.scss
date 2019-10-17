@@ -157,7 +157,7 @@ Navi
 
 /*Menu Open*/
 .navigation-is-open {
-  overflow-y: hidden;
+  //overflow-y: hidden;
 }
 
 .navigation-is-open #navi {
@@ -423,6 +423,7 @@ Speaker card
 
 -------------------------------- */
 .speaker-card {
+  cursor: pointer;
   margin-bottom: 90px;
   .speaker-image {
     position: relative;

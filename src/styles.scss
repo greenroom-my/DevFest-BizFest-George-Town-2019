@@ -1,4 +1,3 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
@@ -52,10 +51,9 @@ Homepage
   position: relative;
   width: 100%;
   height: 100vh;
-  min-height: 500px;
+  min-height: 700px;
   padding: 100px 0;
   overflow: hidden;
-
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,7 +78,7 @@ Homepage
   .description {
     .event-date {
       width: 100%;
-      margin: 50px 0 25px;
+      margin: 30px 0 20px;
       font-size: 15px;
     }
   }
@@ -99,7 +97,7 @@ Homepage
     text-align: center;
 
     opacity: 0;
-    animation: slide-in-cta 1s cubic-bezier(.07,.7,.43,.92) 1.75s 1 normal forwards;
+    animation: slide-in-cta 1s cubic-bezier(.07, .7, .43, .92) 1.75s 1 normal forwards;
 
     &-text {
       display: block;
@@ -121,6 +119,7 @@ Homepage
     }
   }
   @include media-breakpoint-up(lg) {
+    min-height: 700px;
     background-image: url('/assets/images/bg-header-hd.svg');
   }
 }
@@ -135,6 +134,7 @@ Homepage
     transform: translateY(0%);
   }
 }
+
 @-webkit-keyframes slide-in-cta {
   0% {
     opacity: 0;
@@ -146,6 +146,70 @@ Homepage
   }
 }
 
+.logo {
+  animation: slide-up-logo 10s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slide-up-logo {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+.tagline {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  figure {
+    opacity: 0;
+    animation: slide-up-tagline 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+  }
+}
+
+@-webkit-keyframes slide-up-tagline {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
 .header-logo {
   position: absolute;
   top: 0;
@@ -153,7 +217,7 @@ Homepage
   right: 0;
   width: 100%;
   opacity: 0;
-  animation: slide-in-logo 1s cubic-bezier(.07,.7,.43,.92) 1.75s 1 normal forwards;
+  animation: slide-in-logo 1s cubic-bezier(.07, .7, .43, .92) 1.75s 1 normal forwards;
   img {
     display: block;
   }
@@ -184,6 +248,7 @@ Homepage
     transform: translateY(0%);
   }
 }
+
 @-webkit-keyframes slide-in-logo {
   0% {
     opacity: 0;
@@ -203,7 +268,7 @@ Homepage
   left: 0;
   width: 100%;
   height: 100%;
-  
+
   display: block;
   img {
     position: absolute;
@@ -228,7 +293,8 @@ Homepage
           bottom: 30%;
           max-width: 38px;
         }
-      } // blue
+      }
+      // blue
       &green- {
         &diagonal-squares {
           left: 10%;
@@ -248,7 +314,8 @@ Homepage
           width: 7.2%;
           max-width: 46px;
         }
-      } // green
+      }
+      // green
       &top-light-blue-circle {
         left: 2%;
         top: 17%;
@@ -275,7 +342,8 @@ Homepage
           bottom: 19%;
           width: 12px;
         }
-      } //red
+      }
+      //red
       &yellow- {
         &play-button-mobile {
           left: 25%;
@@ -871,5 +939,11 @@ Attending Page
   }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
