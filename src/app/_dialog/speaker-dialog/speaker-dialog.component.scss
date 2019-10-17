@@ -1,3 +1,5 @@
+@import "../../../styling/variables";
+
 .dialog-container {
   width: 100%;
   max-width: 584px;
@@ -12,16 +14,32 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #F1F3F4;
   }
+  .tag-skill {
+    display: inline-block;
+
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+
+    min-width: 45px;
+    padding: 2px 7px;
+    margin-right: 5px;
+    border-radius: 0 0 10px 10px;
+    background: $secondary;
+
+    //position: absolute;
+    //left: -5px;
+    //transform: translateY(-50%);
+  }
 }
 
 .profile-image {
+  position: relative;
   width: 100%;
   max-width: 100px;
   margin: 0;
   margin-right: 20px;
   //border-radius: 50%;
-  border-radius: 0 35% 35% 0;
-  overflow: hidden;
 
   figure {
     width: 100%;
@@ -31,6 +49,9 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+    border-radius: 0 35% 35% 0;
+    overflow: hidden;
   }
 }
 

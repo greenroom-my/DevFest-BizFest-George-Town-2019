@@ -120,8 +120,11 @@ Homepage
   }
   @include media-breakpoint-up(lg) {
     min-height: 700px;
-    background-image: url('/assets/images/bg-header-hd.svg');
+    background-image: url('/assets/images/bg-header-lg.svg');
   }
+  @media (min-width: 1520px) {
+     background-image: url('/assets/images/bg-header-xl.svg');
+   }
 }
 
 @keyframes slide-in-cta {
@@ -381,7 +384,7 @@ Homepage
       display: inline-block;
       background: $light-blue;
       margin: 0px;
-      padding: 45px 45px 45px 34px;
+      padding: 45px 65px 45px 34px;
       border-top-right-radius: 80px;
       border-bottom-right-radius: 0;
       &:before {
