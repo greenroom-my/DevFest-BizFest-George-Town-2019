@@ -120,8 +120,11 @@ Homepage
   }
   @include media-breakpoint-up(lg) {
     min-height: 700px;
-    background-image: url('/assets/images/bg-header-hd.svg');
+    background-image: url('/assets/images/bg-header-lg.svg');
   }
+  @media (min-width: 1520px) {
+     background-image: url('/assets/images/bg-header-xl.svg');
+   }
 }
 
 @keyframes slide-in-cta {
