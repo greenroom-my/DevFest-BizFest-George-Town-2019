@@ -654,8 +654,8 @@ Homepage
       margin: 0 auto;
       padding: {
         top: 42px;
-        left: 70px;
-        right: 70px;
+        left: 60px;
+        right: 20px;
         bottom: 60px;
       }
     ;
@@ -664,6 +664,12 @@ Homepage
 
       @include media-breakpoint-up(md) {
         max-width: 508px;
+        padding: {
+          top: 42px;
+          left: 70px;
+          right: 70px;
+          bottom: 60px;
+        }
       }
     }
     .btn {
@@ -673,8 +679,8 @@ Homepage
   .ticket-content {
     position: relative;
     padding: {
-      top: 36px;
-      left: 50%;
+      top: 20px;
+      left: 40%;
     }
   ;
     & > * {
@@ -704,6 +710,12 @@ Homepage
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
+    }
+    @include media-breakpoint-up(md) {
+      padding: {
+        top: 36px;
+        left: 50%;
+      };
     }
   }
   .ticket {
