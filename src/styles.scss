@@ -153,7 +153,28 @@ Homepage
   animation: slide-up-logo 10s;
   animation-iteration-count: infinite;
 }
-
+@keyframes slide-up-logo {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
 @-webkit-keyframes slide-up-logo {
   0% {
     opacity: 0;
@@ -189,7 +210,28 @@ Homepage
     animation-delay: 6s;
   }
 }
-
+@keyframes slide-up-tagline {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
 @-webkit-keyframes slide-up-tagline {
   0% {
     opacity: 0;
