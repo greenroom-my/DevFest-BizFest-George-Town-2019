@@ -377,6 +377,8 @@ Homepage
 // Speaker Section
 //
 .homepage-speakers {
+  position: relative;
+  overflow: hidden;
   .title {
     color: $gray-300;
     h3 {
