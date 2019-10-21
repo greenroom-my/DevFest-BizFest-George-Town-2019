@@ -68,6 +68,11 @@ Navi
     }
   }
 }
+// Show logo when navigation is open
+#navi.navigation-is-open .logo-container img {
+  opacity: 1 !important;
+}
+
 #navi .logo-container {
   position: relative;
   z-index: 99;
