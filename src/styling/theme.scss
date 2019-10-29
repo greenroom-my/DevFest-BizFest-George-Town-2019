@@ -43,6 +43,47 @@ p {
 
 /* --------------------------------
 
+Label
+
+-------------------------------- */
+.label {
+  position: relative;
+  display: inline-block;
+  padding: .32rem .6rem;
+  border-radius: 0 0 10px 10px;
+
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+.label-group {
+  .label {
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Solid Color Label
+@each $name, $color in $colors {
+  .label-solid-#{$name} {
+    color: $color;
+    background: rgba($color, 0.15);
+  }
+}
+
+@each $name, $color in $theme-colors {
+  .label-solid-#{$name} {
+    color: $color;
+    background: rgba($color, 0.15);
+  }
+}
+
+/* --------------------------------
+
 Navi
 
 -------------------------------- */
