@@ -12,6 +12,7 @@ $yellow:        #f6b816;
 $light-yellow:  #FCE387;
 $green:         #31a651;
 $light-green:   #A8DAB4;
+$violet:        #0720f4;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -22,6 +23,7 @@ $colors: map-merge(
                         "medium-blue":      $medium-blue,
                         "light-yellow":     $light-yellow,
                         "light-green":      $light-green,
+                        "violet":           $violet,
                 ),
                 $colors
 );
