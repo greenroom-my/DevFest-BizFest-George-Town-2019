@@ -6,7 +6,7 @@ Color
 -------------------------------- */
 @each $name, $color in $colors {
   .bg-#{$name} {
-    background: $color;
+    background: $color !important;
 
     &:before {
       opacity: .03;
@@ -58,6 +58,7 @@ Label
   line-height: 1;
   text-align: center;
 }
+
 .label-group {
   .label {
     margin-right: 5px;
@@ -70,15 +71,21 @@ Label
 // Solid Color Label
 @each $name, $color in $colors {
   .label-solid-#{$name} {
-    color: $color;
-    background: rgba($color, 0.15);
+    //color: $color;
+    //background: rgba($color, 0.15);
+    background: $color;
+    color: white;
+    color: hsla(0, 0%, 100%, 0.9);
   }
 }
 
 @each $name, $color in $theme-colors {
   .label-solid-#{$name} {
-    color: $color;
-    background: rgba($color, 0.15);
+    //color: $color;
+    //background: rgba($color, 0.15);
+    background: $color;
+    color: white;
+    color: hsla(0, 0%, 100%, 0.9);
   }
 }
 
@@ -109,6 +116,7 @@ Navi
     }
   }
 }
+
 // Show logo when navigation is open
 #navi.navigation-is-open .logo-container img {
   opacity: 1 !important;
