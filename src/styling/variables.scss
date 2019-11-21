@@ -7,9 +7,11 @@ $red:           #db4437;
 $light-red:     #F9D2CF;
 $blue:          #4682FC;
 $medium-blue:   #ADCAF9;
+$dark-blue:     #174EA5;
 $light-blue:    #E8F0FF;
 $yellow:        #f6b816;
 $light-yellow:  #FCE387;
+$orange:        #fbbc02;
 $green:         #31a651;
 $light-green:   #A8DAB4;
 $violet:        #0720f4;
@@ -21,6 +23,7 @@ $colors: map-merge(
                         "light-red":        $light-red,
                         "light-blue":       $light-blue,
                         "medium-blue":      $medium-blue,
+                        "dark-blue":        $dark-blue,
                         "light-yellow":     $light-yellow,
                         "light-green":      $light-green,
                         "violet":           $violet,

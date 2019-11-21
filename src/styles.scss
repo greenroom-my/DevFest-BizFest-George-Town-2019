@@ -859,11 +859,34 @@ Schedule
   }
 
   .slot {
-    padding: 30px 20px;
-    border-top: 1px solid #ededed;
-    border-left: 1px solid #ededed;
-    &:hover {
-      background: #f5f5f5;
+    padding: 20px;
+    min-height: 100px;
+    //border-top: 1px solid #ededed;
+    //border-left: 1px solid #ededed;
+    border-top: 2px solid white;
+    border-left: 1px solid white;
+    //&:hover {
+    //  background: #f5f5f5;
+    //}
+    background: #A8DAB5;
+    &:nth-child(2n) {
+      background: #FDE293;
+    }
+
+    &:nth-child(3n) {
+      background:#D1E2FC;
+    }
+
+    &:nth-child(4n) {
+      background:#FAD2CF;
+    }
+
+    &:nth-child(5n) {
+      background:#174EA5;
+      color: hsla(0, 0%, 100%, 0.9);
+      .schedule-details h4 {
+        color: hsla(0, 0%, 100%, 0.9);
+      }
     }
 
     .schedule-details {
@@ -885,7 +908,8 @@ Schedule
     }
     .speaker-info {
       width: 100%;
-      margin-top: 20px;
+      //margin-top: 20px;
+      margin-bottom: 10px;
       display: flex;
       flex-wrap: nowrap;
       figure {
@@ -903,7 +927,7 @@ Schedule
       }
     }
     @include media-breakpoint-down(md) {
-      padding: 15px;
+      padding: 20px 15px;
     }
   }
   // .slot end
@@ -911,10 +935,12 @@ Schedule
 
 .schedule-time {
   width: 100px;
-  padding: 30px;
+  //padding: 30px;
+  padding: 8px 15px;
   padding-left: 0;
   text-align: right;
-  border-top: 1px solid #ededed;
+  //border-top: 1px solid #ededed;
+  border-top: 2px solid white;
   span {
     display: block;
     line-height: 1;
