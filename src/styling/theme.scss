@@ -459,6 +459,14 @@ Button
     border-bottom-right-radius: 0;
   }
   &-with {
+    &-download {
+      &:after {
+        content: url('/assets/icons/keyboard_arrow_down.svg');
+        width: 10px;
+        height: 10px;
+        margin-left: 16px;
+      }
+    }
     &-link {
       &:after {
         content: url('/assets/icons/open_in_new.svg');
